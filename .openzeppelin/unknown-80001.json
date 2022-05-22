@@ -1,0 +1,82 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x3F47CB4B5883c29e0415438e143D4b72D9303e33",
+    "txHash": "0xd0637bed316cfebf3612303d4f3d482ee3d34be99bc9d01daae68025e6b29e26"
+  },
+  "proxies": [
+    {
+      "address": "0x01AC2A43E79E88Ce3B7A270A9Ca0B1Eb069F3e48",
+      "txHash": "0x158c8e2fe15d6ab2f415cf36125f4cf57b344c0426c68b702b5821bfb6313159",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1C37c20aFB32794E18D57924BD767C9A7cdE309b",
+      "txHash": "0xf961f43f39b63f9025e3850c12fdc07f17dffd2827b9917d2278e4e8f8c8cba5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x810E51784512edA873aA1F19eeCA0896dbE4564C",
+      "txHash": "0xae99139d29ab11a5329ac568dc7a25a15ef7d01d0d66d735c01a7f36c4d8ccfb",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "240092d8fdacba37edfbdd6e82888d07dd12b2de0e5ab51375ea410d12c7dfcb": {
+      "address": "0xb5EE76F57648b6f834Fd40937239CBe36ccc92f7",
+      "txHash": "0xeffa4d1da5b7e4767521a5addbf4b53e7fde51fc390dbae9fb8d434bb92e299d",
+      "layout": {
+        "storage": [
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "9da979948d24004dae7adc55064f2d9d4580401c553bf96972d5d6cd25f44604": {
+      "address": "0x1D5E89806E9D00Ca4aA1308ac74659B6a9Dc3499",
+      "txHash": "0x9760364963338cb01a9bc92387e1cfd0c3428f9f3cf2518148e50e175bda6d80",
+      "layout": {
+        "storage": [
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:6"
+          },
+          {
+            "label": "_trustedForwarder",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "BaseRelayRecipient",
+            "src": "@opengsn/contracts/src/BaseRelayRecipient.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
